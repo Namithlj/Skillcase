@@ -180,4 +180,4 @@ const getBookmarks = async (req, res, next) => {
   }
 };
 
-module.exports = { create, seed, list, getById, like, comment, bookmark, getComments, getBookmarks };
+module.exports = { create, seed, seedTest, list, getById, like, comment, bookmark, getComments, getBookmarks };

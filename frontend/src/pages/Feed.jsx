@@ -32,7 +32,8 @@ function VideoCard({ video, onOpenComments, onActiveChange }){
     const u = video.external_url.trim();
     src = (u.startsWith('http') ? convertDriveShareToDirect(u) : u);
   } else {
-    src = (video.file_path || '').startsWith('http') ? video.file_path : `${backendOrigin}${video.file_path}`;
+    const fp = video.file_path || '';
+    src = fp.startsWith('http') ? convertDriveShareToDirect(fp) : `${backendOrigin}${fp}`;
   }
   let loadError = false
   useEffect(()=>{

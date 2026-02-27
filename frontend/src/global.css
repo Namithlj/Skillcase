@@ -13,6 +13,9 @@ body{margin:0;background:#050507;color:#fff;font-family:Inter,ui-sans-serif,syst
 .app-nav .nav-logout{margin-left:8px}
 .feed{padding-top:80px}
 
+/* ensure page content does not sit under fixed header */
+.page-content{padding-top:96px}
+
 .nav-add{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:linear-gradient(90deg,#06b6d4,#0ea5a4);color:#022;font-weight:800;font-size:20px;text-decoration:none;box-shadow:0 6px 18px rgba(6,182,212,0.14);transform:translateY(-10px)}
 .nav-add:active{transform:translateY(-8px)}
 .nav-icon{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;color:#fff;background:transparent;text-decoration:none;font-size:18px}

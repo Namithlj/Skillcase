@@ -1,0 +1,39 @@
+.html,body,#root{height:100%;}
+body{margin:0;background:#050507;color:#fff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;smooth-font-smoothing:antialiased}
+.top-header{position:fixed;left:12px;right:12px;top:12px;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;background:transparent;z-index:80}
+.top-header .header-link{display:inline-flex;align-items:center;gap:8px;color:#fff;text-decoration:none}
+.top-header .header-label{font-weight:700;margin-left:6px}
+.top-header .header-right{display:flex;align-items:center;gap:12px}
+.top-header .header-add .nav-icon{background:linear-gradient(90deg,#06b6d4,#0ea5a4);box-shadow:0 8px 28px rgba(6,182,212,0.12);color:#022}
+.top-header .header-profile .nav-icon{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01))}
+.app-nav .nav-left{font-weight:600}
+.app-nav .nav-center{position:relative;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:8px}
+.app-nav .nav-user-center{pointer-events:auto;color:#fff;font-weight:700;margin-left:8px}
+.app-nav .nav-right{display:flex;align-items:center;gap:8px}
+.app-nav .nav-logout{margin-left:8px}
+.feed{padding-top:80px}
+
+.nav-add{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:linear-gradient(90deg,#06b6d4,#0ea5a4);color:#022;font-weight:800;font-size:20px;text-decoration:none;box-shadow:0 6px 18px rgba(6,182,212,0.14);transform:translateY(-10px)}
+.nav-add:active{transform:translateY(-8px)}
+.nav-icon{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;color:#fff;background:transparent;text-decoration:none;font-size:18px}
+.nav-left, .nav-right{display:flex;align-items:center;gap:10px}
+.app-nav .nav-right .nav-icon{opacity:0.95}
+.app-nav .nav-left a{display:inline-flex;align-items:center}
+
+.nav-github{background:linear-gradient(90deg,#24292e,#444);padding:6px 10px;border-radius:10px;color:#fff;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn-primary{padding:10px 14px;border-radius:12px;border:none;background:linear-gradient(90deg,#06b6d4,#0ea5a4);color:#022;cursor:pointer;box-shadow:0 8px 24px rgba(6,182,212,0.12);font-weight:700}
+
+.btn,button,input,select{transition:all 160ms ease}
+.btn:hover,button:hover,input:focus,select:focus{transform:translateY(-2px)}
+
+.auth-container{min-height:calc(100vh - 64px);display:flex;align-items:center;justify-content:center;padding:36px}
+.auth-form{width:360px;background:linear-gradient(180deg,#07070a, #06060a);border-radius:14px;padding:22px;box-shadow:0 12px 40px rgba(3,7,18,0.6);border:1px solid rgba(255,255,255,0.03)}
+.auth-form h2{margin:0 0 12px 0}
+.auth-input{width:100%;padding:12px 14px;margin:10px 0;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff}
+.btn{width:100%;padding:10px;border-radius:10px;border:none;background:linear-gradient(90deg,#ff6b6b,#ff3b30);color:#fff;font-weight:600;margin-top:12px}
+.error-msg{background:rgba(255,0,0,0.06);padding:8px;border-radius:6px;color:#ffb3b3;margin-bottom:8px}
+.success-msg{background:rgba(0,255,0,0.04);padding:8px;border-radius:6px;color:#a7ffb3;margin-bottom:8px}
+
+/* small helpers */
+.muted{opacity:0.78}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:10px;border-radius:10px}

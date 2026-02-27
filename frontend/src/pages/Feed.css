@@ -1,0 +1,23 @@
+.feed{height:100vh;overflow-y:scroll;background:linear-gradient(180deg,#040406,#07070a);scroll-snap-type:y mandatory}
+.video-card{height:100vh;position:relative;display:flex;align-items:center;justify-content:center;scroll-snap-align:start}
+.video{width:100%;height:100%;object-fit:contain;background:#000;border-radius:6px}
+.overlay{position:absolute;right:16px;bottom:140px;color:#fff;max-width:120px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.overlay h3{margin:0 0 8px 0;font-size:14px;text-align:right}
+.actions{display:flex;flex-direction:column;gap:14px}
+.actions button{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));border:none;color:#fff;padding:12px;border-radius:12px;min-width:56px;display:inline-flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 8px 20px rgba(0,0,0,0.45)}
+.actions button.liked{color:#ff3b30}
+.actions button.add-overlay{background:linear-gradient(90deg,#06b6d4,#0ea5a4);color:#022;font-weight:800;font-size:20px;box-shadow:0 12px 30px rgba(6,182,212,0.14)}
+.loader{padding:20px;color:#fff;text-align:center}
+
+.center-toggle{position:absolute;left:0;right:0;top:0;bottom:0;display:flex;align-items:center;justify-content:center}
+
+.info-box{position:absolute;left:16px;right:100px;bottom:20px;background:linear-gradient(180deg,rgba(0,0,0,0.45),rgba(0,0,0,0.6));padding:12px;border-radius:12px}
+.info-title{font-weight:700;font-size:18px}
+.info-meta{font-size:12px;opacity:0.85;margin-top:6px}
+
+.comments-sheet{position:fixed;left:0;right:0;bottom:0;top:20%;background:linear-gradient(#0b0b0b,#040405);color:#fff;z-index:100;padding:12px;display:flex;flex-direction:column;border-top-left-radius:14px;border-top-right-radius:14px}
+.sheet-header{display:flex;align-items:center;gap:12px}
+.sheet-body{flex:1;overflow:auto;margin-top:12px}
+.sheet-footer{display:flex;gap:8px}
+.comments-list{display:flex;flex-direction:column;gap:8px}
+.comment-item{background:rgba(255,255,255,0.03);padding:10px;border-radius:10px}
